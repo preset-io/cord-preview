@@ -11,7 +11,7 @@
     "@cord-sdk/react": "^1.41.0",
     "@floating-ui/react": "^0.24.3",
     "@floating-ui/react-dom": "^0.7.0",
-    "ag-grid-community": "^28.0.0",
+    "ag-grid-community": "^32.0.1",
     "ag-grid-react": "^28.0.0",
     "classnames": "^2.5.1",
     "highcharts": "^10.2.0",
