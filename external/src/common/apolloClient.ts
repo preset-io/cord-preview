@@ -102,6 +102,7 @@ export const apolloConnection = ({
   const websocketLink = new WebSocketLink(subscriptionClient);
 
   const graphQLErrorLink = onError(({ operation, graphQLErrors }) => {
+    console.log('graphQLErrors', graphQLErrors);
     if (
       subscriptionClient.status === WebSocket.OPEN &&
       graphQLErrors &&
