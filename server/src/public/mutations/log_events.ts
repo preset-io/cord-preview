@@ -11,7 +11,7 @@ const eventCountMetric = Counter({
 export const logEventsMutationResolver: Resolvers['Mutation']['logEvents'] =
   async (_, args, context) => {
     const events = args.events;
-
+    return true;
     events.forEach((event) => {
       const level = event.logLevel;
       if (level === 'debug') {
