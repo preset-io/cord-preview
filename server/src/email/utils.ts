@@ -37,9 +37,13 @@ export function getReplyToEmailAddress(
     // SendGrid, who call a webhook (search this repo for
     // SendGridWebhookHandler) so we can handle them and e.g. append reply
     // contents to the appropriate thread.
-    const replyToAddress = `${parsedAddress.local}-${notificationId}@cord.fyi`;
+    // Preset Note:
+    // It was: `${parsedAddress.local}-${notificationId}@cord.fyi`; but we're not using webhooks
+    // So this address is now just a no-reply address. Why not just removing the reply-to? because you would
+    // be replying to comments@preset.io (the sender).
+    const replyToAddress = 'no-reply@preset.io';
     if (parsedAddress.name) {
-      return `${parsedAddress.name} <${replyToAddress}>`;
+      return `no-reply@preset.io <${replyToAddress}>`;
     }
     return replyToAddress;
   } catch (e) {
