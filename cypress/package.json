@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.222.0",
-    "@aws-sdk/client-secrets-manager": "^3.222.0",
+    "@aws-sdk/client-s3": "^3.620.1",
+    "@aws-sdk/client-secrets-manager": "^3.620.1",
     "cypress": "^12.7.0",
     "fs-extra": "^10.1.0",
     "jsonwebtoken": "^8.5.1",
